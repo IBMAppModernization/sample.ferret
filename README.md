@@ -1,7 +1,7 @@
 Ferret [![Build Status](https://travis-ci.org/WASdev/sample.ferret.svg?branch=master)](https://travis-ci.org/WASdev/sample.ferret)
 ======
 
-This sample project contains a simple Servlet application called Ferret. Ferret listens for HTTP requests sent to `<host>:<port>/ferret[/*]`, and responds with information about the request and the server. This is a simplified fork of [https://github.com/WASdev/sample.ferret](https://github.com/WASdev/sample.ferret) to test S2I deployments. It differs from the orgignal as follows:
+This sample project contains a simple Servlet application called Ferret. Ferret listens for HTTP requests sent to `<host>:<port>/ferret[/*]`, and responds with information about the request and the server. This is a simplified fork of [https://github.com/WASdev/sample.ferret](https://github.com/WASdev/sample.ferret) to test S2I deployments. It differs from the original as follows:
 
 1. Maven only build that creates a **.war** file but does not use the Liberty Maven plugin to create a Liberty server instance
 2. Copied *server.xml* to the newly created folder **wlp/config** to accommodate multi-module apps.
@@ -10,7 +10,7 @@ This sample project contains a simple Servlet application called Ferret. Ferret 
 
 ### Maven
 1. Download and install [Eclipse with the WebSphere Developer Tools](https://developer.ibm.com/wasdev/downloads/liberty-profile-using-eclipse/).
-2. Create a new Liberty Profile Server. See [step 3](https://developer.ibm.com/wasdev/downloads/liberty-profile-using-eclipse/) for details.
+2. Create a new Liberty Profile Server. See [this article](https://developer.ibm.com/wasdev/downloads/liberty-profile-using-eclipse/) for details.
 3. Clone this repository.
 4. Import the sample into Eclipse using *File -> Import -> Maven -> Existing Maven Projects* option.
 5. Deploy the sample into Liberty server. Right click on the *ferret* sample and select *Run As -> Run on Server* option. Find and select a  Liberty profile server and press *Finish*.
