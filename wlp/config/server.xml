@@ -12,14 +12,14 @@
         <tcpOptions soReuseAddr="true"/>
     </httpEndpoint>
 
-    <application name="ferret" context-root="/ferret" location="${appLocation}.war" type="war">
+    <application name="ferret" context-root="/ferret" location="ferret.war" type="war">
       <application-bnd>
         <security-role name="user">
           <user name="bob"/>
         </security-role>
       </application-bnd>
     </application>
-    
+
     <keyStore id="defaultKeyStore" password="Liberty"/>
 
     <quickStartSecurity userName="bob" userPassword="passw0rd" />
