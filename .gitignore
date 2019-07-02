@@ -16,3 +16,7 @@ tmp/
 /target
 .gradle/
 build/
+
+# Allow
+!target/*.war
+!target/*.ear
