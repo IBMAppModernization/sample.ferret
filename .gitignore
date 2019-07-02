@@ -13,7 +13,7 @@ tmp/
 *~
 /RemoteSystemsTempFiles
 *.class
-/target
+target
 .gradle/
 build/
 
